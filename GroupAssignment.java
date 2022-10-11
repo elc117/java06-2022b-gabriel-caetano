@@ -4,7 +4,7 @@ class GroupAssignment extends Assignment {
   private String teamMates;
 
   public String message() {
-    return "Group Assignment " + this.description + " is " + this.status() + " call " + this.teamMates;    
+    return super.message() + " call " + this.teamMates;    
   }
 
   public GroupAssignment(LocalDate dueDate, String description, String teamMates) {
