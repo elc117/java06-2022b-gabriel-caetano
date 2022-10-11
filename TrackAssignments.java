@@ -20,7 +20,7 @@ public class TrackAssignments {
     for (Assignment item : list) {
       System.out.println(item.message());
     }
-
+    
     for (Assignment item : list) {
       if (item.getDescription() == "jamboard") {
         item.complete(LocalDate.now());
@@ -34,7 +34,7 @@ public class TrackAssignments {
 
     // COMPLETE-ME: count completed assignments
     long doneAssignments = countDone(list);
-    System.out.println(doneAssignments);
+    System.out.println("Done assignments: " + doneAssignments);
   }
 
   private static long countDone(ArrayList<Assignment> list) {
