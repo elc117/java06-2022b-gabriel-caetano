@@ -33,7 +33,7 @@ class Assignment {
     return dueDate.compareTo(LocalDate.now());
   }
 
-  protected String status() {
+  private String status() {
     if (!this.pending) return "done";
     if (this.daysLeft() < 0) return "late";
     return "due in " + this.daysLeft() + " days";

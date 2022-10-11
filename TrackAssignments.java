@@ -38,6 +38,6 @@ public class TrackAssignments {
   }
 
   private static long countDone(ArrayList<Assignment> list) {
-    return list.stream().filter((Assignment item) -> item.status().equals("done")).count();
+    return list.stream().filter((Assignment item) -> !item.isPending()).count();
   }
 }
