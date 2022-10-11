@@ -40,7 +40,15 @@ class Assignment {
 
   public String message() {
     return "Assignment " + this.description + " is " + status();
-    
+  }
+
+  public String toString() {
+    String res = "{ dueDate='" + this.dueDate +
+                "', description='" + this.description +
+                "', pending='" + this.pending + 
+                "', submitDate='" + this.submitDate + "'}";
+
+    return res;
   }
 
 }
